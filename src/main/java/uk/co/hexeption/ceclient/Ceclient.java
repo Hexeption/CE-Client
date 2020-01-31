@@ -6,6 +6,7 @@ import net.minecraftforge.fml.common.Mod;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import uk.co.hexeption.ceclient.event.EventCaller;
+import uk.co.hexeption.ceclient.managers.FontManager;
 import uk.co.hexeption.ceclient.utils.LogHelper;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -22,6 +23,7 @@ public class Ceclient {
     public final EventBus eventBus = new EventManager();
 
     // Font Manager
+    public final FontManager fontManager = new FontManager();
 
     // Mod Manager
 
@@ -36,6 +38,9 @@ public class Ceclient {
 
         // Test Events
         eventBus.subscribe(new EventCaller());
+
+        // Load Fonts
+        fontManager.init();
 
         LogHelper.endSection();
         Runtime.getRuntime().addShutdownHook(new Thread(this::end));
