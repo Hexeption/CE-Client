@@ -4,6 +4,7 @@
   "package": "uk.co.hexeption.ceclient.mixin.mixins",
   "refmap": "mixins.ceclient.refmap.json",
   "mixins": [
+    "MixinKeyboardListener",
     "MixinMinecraft"
   ],
   "injectors": {
