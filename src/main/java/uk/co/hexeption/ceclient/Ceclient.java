@@ -6,6 +6,7 @@ import net.minecraftforge.fml.common.Mod;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import uk.co.hexeption.ceclient.event.EventCaller;
+import uk.co.hexeption.ceclient.hud.CEHud;
 import uk.co.hexeption.ceclient.managers.FontManager;
 import uk.co.hexeption.ceclient.utils.LogHelper;
 
@@ -28,6 +29,7 @@ public class Ceclient {
     // Mod Manager
 
     // Hud Manager
+    public final CEHud ceHud = new CEHud();
 
     // Command Manager
 
@@ -41,6 +43,9 @@ public class Ceclient {
 
         // Load Fonts
         fontManager.init();
+
+        // Load Hud
+        eventBus.subscribe(ceHud);
 
         LogHelper.endSection();
         Runtime.getRuntime().addShutdownHook(new Thread(this::end));

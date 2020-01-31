@@ -1,12 +1,6 @@
 package uk.co.hexeption.ceclient.event;
 
-import me.zero.alpine.listener.EventHandler;
 import me.zero.alpine.listener.Listenable;
-import me.zero.alpine.listener.Listener;
-import org.lwjgl.glfw.GLFW;
-import uk.co.hexeption.ceclient.Ceclient;
-import uk.co.hexeption.ceclient.event.events.input.EventKeyPressed;
-import uk.co.hexeption.ceclient.event.events.screen.EventRender2D;
 
 /**
  * EventCaller
@@ -16,10 +10,10 @@ import uk.co.hexeption.ceclient.event.events.screen.EventRender2D;
  */
 public class EventCaller implements Listenable {
 
-    @EventHandler
-    private Listener<EventKeyPressed> eventKeyPressedListener = new Listener<>(event -> Ceclient.LOGGER.info("Key Pressed: " + GLFW.glfwGetKeyName(event.getKey(), event.getScanCode())));
-
-    @EventHandler
-    private Listener<EventRender2D> eventRender2DListener = new Listener<>(event -> Ceclient.INSTANCE.fontManager.hud.drawStringWithShadow("Pls Work", 5, 5, -1));
+//    @EventHandler
+//    private Listener<EventKeyPressed> eventKeyPressedListener = new Listener<>(event -> Ceclient.LOGGER.info("Key Pressed: " + GLFW.glfwGetKeyName(event.getKey(), event.getScanCode())));
+//
+//    @EventHandler
+//    private Listener<EventRender2D> eventRender2DListener = new Listener<>(event -> Ceclient.INSTANCE.fontManager.hud.drawStringWithShadow("Pls Work", 5, 5, -1));
 
 }
