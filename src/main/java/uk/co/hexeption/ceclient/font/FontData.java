@@ -16,7 +16,7 @@
  *     along with this program.  If not, see <http://www.gnu.org/licenses/>.
  ******************************************************************************/
 
-package uk.co.hexeption.darkforgereborn.font;
+package uk.co.hexeption.ceclient.font;
 
 import static org.lwjgl.opengl.GL11.GL_LINEAR;
 import static org.lwjgl.opengl.GL11.GL_NEAREST;
@@ -25,7 +25,7 @@ import static org.lwjgl.opengl.GL11.GL_REPEAT;
 import com.mojang.blaze3d.platform.GlStateManager;
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import uk.co.hexeption.darkforgereborn.util.render.GLUtils;
+import uk.co.hexeption.ceclient.utils.render.GLUtils;
 
 /**
  * Stores font information which is used within a font renderer. Created by Brandon on 9/26/2016.

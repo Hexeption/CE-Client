@@ -16,7 +16,7 @@
  *     along with this program.  If not, see <http://www.gnu.org/licenses/>.
  ******************************************************************************/
 
-package uk.co.hexeption.darkforgereborn.font;
+package uk.co.hexeption.ceclient.font;
 
 /**
  * Renders strings at given x,y positions with the given hexadecimal color.
