@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "compatibilityLevel": "JAVA_8",
+  "package": "uk.co.hexeption.ceclient.mixin.mixins",
+  "refmap": "mixins.ceclient.refmap.json",
+  "mixins": [
+    "MixinMinecraft"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
